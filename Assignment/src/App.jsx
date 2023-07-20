@@ -1,16 +1,12 @@
+import "./App.css"; 
+import MainPage from "./Pages/MainPage";
 
-import './App.css'
-
-function App() { 
-
+function App() {
   return (
     <>
-      <div>
-        
-      </div>
-       
+      <MainPage/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
