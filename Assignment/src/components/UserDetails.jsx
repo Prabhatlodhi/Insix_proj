@@ -3,8 +3,6 @@ import GirlLogo from "./assets/GirlImage.webp";
 
 const UserDetails = () => {
   const currentDate = new Date();
-
-  // Format the date in "yyyy-MM-dd" format
   const formattedDate = currentDate.toISOString().slice(0, 10);
 
   return (
@@ -134,6 +132,8 @@ const Wrapper = styled.section`
     height: var(--btnheight);
     border-radius: var(--btnborderRadiusBtn);
     margin-bottom: 20px;
+    color:white;
+    padding:5px;
   }
 `;
 
