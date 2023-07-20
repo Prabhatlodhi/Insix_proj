@@ -16,21 +16,20 @@ const Navbar = () => {
     <Wrapper>
       <ul>
         <li className="tooltip">
-        <span className="tooltiptext" >Company Logo</span>
+          <span className="tooltiptext">Logo</span>
           <FaPhoenixFramework size={22} />
         </li>
         <li className="tooltip">
-        <span className="tooltiptext" >Search</span>
+          <span className="tooltiptext">Search</span>
           <FaSearchengin size={22} />
         </li>
       </ul>
       <ul className="app_navigation">
         <li className="tooltip">
-
           <FaArchway size={22} />
         </li>
         <li className="tooltip">
-        <span className="tooltiptext" >Contact</span>
+          <span className="tooltiptext">Contact</span>
           <FaBook size={22} />
         </li>
         <li className="tooltip">
@@ -45,7 +44,7 @@ const Navbar = () => {
       </ul>
       <ul>
         <li className="tooltip">
-        <span className="tooltiptext" >Logout</span>
+          <span className="tooltiptext">Logout</span>
           <FaGripfire size={22} />
         </li>
         <li className="tooltip">
@@ -74,28 +73,26 @@ const Wrapper = styled.section`
     margin-bottom: 120px;
   }
   .tooltip {
-    position: relative; 
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    position: relative;
+    border-bottom: 1px dotted black;
   }
   .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px; 
-  position: absolute;
-  z-index: 1;
-  left:35px;
-  bottom:1px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-
-}
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    bottom: 1px;
+  }
+ 
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 `;
 
 export default Navbar;
