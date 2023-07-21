@@ -1,11 +1,13 @@
-import { ProgressBar,   } from 'react-bootstrap';
+import { ProgressBar } from "react-bootstrap";
 
 const ProgressBarCompo = () => {
-  return (
-    <div>
-      <ProgressBar now={11} label={`${11}% completed`} />
-    </div>
-  )
-}
+  const percentage = 73;
 
-export default ProgressBarCompo
+  return (
+    <div className="progressBar">
+      <ProgressBar now={percentage} label={`${percentage}% completed`} />
+    </div>
+  );
+};
+
+export default ProgressBarCompo;

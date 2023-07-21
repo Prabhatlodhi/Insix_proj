@@ -71,9 +71,8 @@ const MidSection = () => {
   );
 };
 
-const Wrapper = styled.section`
-  border: 1px solid red;
-  padding: 10px 30px;
+const Wrapper = styled.section` 
+  padding: 10px 40px;
   width: 50%;
   hr {
     margin-top: 10px;
