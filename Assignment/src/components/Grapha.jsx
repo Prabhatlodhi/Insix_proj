@@ -1,3 +1,15 @@
+import styled from "styled-components";
+
+const GraphWrapper = styled.div`
+  width: 90%;
+  height: 300px;
+  margin: 0px auto;
+  @media (max-width: 380px) {
+    width: 350px;
+    height: 300px;
+  }
+`;
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -61,10 +73,13 @@ export const data = {
     },
   ],
 };
-export default function Grapha() {
+
+const Grapha = () => {
   return (
-    <div style={{ width: "90%", height: "300px",   margin:"0px auto" }}> 
+    <GraphWrapper>
       <Bar options={options} data={data} />
-    </div>
+    </GraphWrapper>
   );
-}
+};
+
+export default Grapha;

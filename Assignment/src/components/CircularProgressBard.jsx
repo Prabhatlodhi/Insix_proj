@@ -27,8 +27,7 @@ const Wrapper = styled.div`
   .progress-bar {
     width: 90px;
     height: 90px;
-    border-radius: 50%;
-    ${'' /* margin:0px 50px; */}
+    border-radius: 50%; 
     background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
       conic-gradient(var(--primary) 75%, var(--secondary) 0);
   }
@@ -37,6 +36,13 @@ const Wrapper = styled.div`
   position: relative;
   top:30px;
   left:30px;
+}
+@media (max-width: 380px) {
+  .progress-bar {
+    width: 88px;
+    height: 88px;
+    margin:5px;
+  }
 }
 `;
 

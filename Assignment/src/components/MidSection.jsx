@@ -132,30 +132,31 @@ const Wrapper = styled.section`
       ${"" /* border: 2px solid green; */}
       width: 100%;
     }
-    .circular-part {
-      width: 100%; 
+
+    .main {
+      width: 350px;
     }
-    .main{
-      width:350px;
-    }
-    .sub{
-      width:100px;
+    .sub {
+      width: 100px;
     }
     .wrapper {
       flex-wrap: wrap;
     }
     .retire-income {
       padding-top: 20px;
-      h4{
-        font-size:20px;
+      h4 {
+        font-size: 20px;
       }
-      h1{
-        font-size:30px;
+      h1 {
+        font-size: 30px;
       }
+    }
+    .circular-part {
+      width: 100%; 
+      justify-content: center;
     }
     .bottom-container {
       width: 100%;
-       
       margin-top: 0px;
       margin-left: 0px;
     }

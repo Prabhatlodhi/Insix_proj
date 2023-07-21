@@ -31,13 +31,15 @@ const BottomNav = () => {
 };
 
 const Wrapper = styled.section`
+  display: none;
   @media (max-width: 380px) {
+    display: block;
     width: 100vw;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    position:fixed;
-    bottom:0px;
-    left:0px;
-    background:white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: white;
     ul {
       display: flex;
       justify-content: center;
