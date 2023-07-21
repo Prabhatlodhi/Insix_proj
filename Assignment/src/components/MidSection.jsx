@@ -10,24 +10,24 @@ const MidSection = () => {
         <h1>Staring Year 2056</h1>
       </div>
       <div className="wrapper">
-        <div className="goal">
+        <div className="goal main">
           <h1>$ 300,000</h1>
           <h5>My Goal</h5>
           <hr />
         </div>
-        <div className="goal">
+        <div className="goal sub">
           <h1>$ 300,000</h1>
           <h5>My Goal</h5>
           <hr />
         </div>
-        <div className="goal">
+        <div className="goal sub">
           <h1>$ 300,000</h1>
           <h5>My Goal</h5>
           <hr />
         </div>
       </div>
       <Grapha />
-      <div className="bottom-container" >
+      <div className="bottom-container">
         <div>
           <h5>These numbers represents current goal achievement</h5>
           <h3>How do I compare my peers?</h3>
@@ -71,16 +71,16 @@ const MidSection = () => {
   );
 };
 
-const Wrapper = styled.section`  
-margin: 0px 40px;
+const Wrapper = styled.section`
+  margin: 0px 40px;
   padding: 0px 40px;
-  padding-top:10px;
+  padding-top: 10px;
   width: 50%;
   hr {
     margin-top: 10px;
   }
-  li{
-    font-size:14px;
+  li {
+    font-size: 14px;
   }
   h4 {
     color: var(--primary);
@@ -90,7 +90,7 @@ margin: 0px 40px;
   }
   .retire-income {
     padding-left: 18px;
-    padding-top:35px;
+    padding-top: 35px;
   }
   .goal {
     width: 200px;
@@ -100,7 +100,6 @@ margin: 0px 40px;
   .hh {
     border: 1px solid red;
   }
-   
 
   .wrapper {
     display: flex;
@@ -108,22 +107,58 @@ margin: 0px 40px;
   }
   .circular-portion-wrapper {
     display: flex;
-    align-items:center; 
-    margin-top:15px;
+    align-items: center;
+    margin-top: 15px;
   }
   .circular-part {
-    display: flex; 
-    width:500px;
-    justify-content:space-evenly;
-    padding:0px 20px; 
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    padding: 0px 20px;
   }
   select {
     border: none;
-    margin-bottom:9px;
+    margin-bottom: 9px;
   }
-  .bottom-container{
-    margin-top:30px;
-    margin-left:20px;
+  .bottom-container {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  @media (max-width: 380px) {
+    width: 99%;
+    margin: 0px auto;
+    .circular-portion-wrapper {
+      flex-wrap: wrap;
+      ${"" /* border: 2px solid green; */}
+      width: 100%;
+    }
+    .circular-part {
+      width: 100%; 
+    }
+    .main{
+      width:350px;
+    }
+    .sub{
+      width:100px;
+    }
+    .wrapper {
+      flex-wrap: wrap;
+    }
+    .retire-income {
+      padding-top: 20px;
+      h4{
+        font-size:20px;
+      }
+      h1{
+        font-size:30px;
+      }
+    }
+    .bottom-container {
+      width: 100%;
+       
+      margin-top: 0px;
+      margin-left: 0px;
+    }
   }
 `;
 

@@ -81,5 +81,11 @@ const Wrapper = styled.div`
     padding-left: 15px;
     border-left: 1px solid gray;
   }
+  @media (max-width: 380px) { 
+    text-align:center;
+    width:100%;
+    margin:0px auto;
+    padding-bottom:80px;
+  }
 `;
 export default RightPortion;

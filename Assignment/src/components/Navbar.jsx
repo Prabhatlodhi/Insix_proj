@@ -13,51 +13,54 @@ import {
 
 const Navbar = () => {
   return (
-    <Wrapper>
-      <ul>
-        <li className="tooltip">
-          <span className="tooltiptext">Logo</span>
-          <FaPhoenixFramework size={22} />
-        </li>
-        <li className="tooltip">
-          <span className="tooltiptext">Search</span>
-          <FaSearchengin size={22} />
-        </li>
-      </ul>
-      <ul className="app_navigation">
-        <li className="tooltip">
-          <FaArchway size={22} />
-        </li>
-        <li className="tooltip">
-          <span className="tooltiptext">Contact</span>
-          <FaBook size={22} />
-        </li>
-        <li className="tooltip">
-          <FaFolder size={22} />
-        </li>
-        <li className="tooltip">
-          <FaCalendarWeek size={22} />
-        </li>
-        <li className="tooltip">
-          <FaIdBadge size={22} />
-        </li>
-      </ul>
-      <ul>
-        <li className="tooltip">
-          <span className="tooltiptext">Logout</span>
-          <FaGripfire size={22} />
-        </li>
-        <li className="tooltip">
-          <FaMagento size={22} />
-        </li>
-      </ul>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <ul className="search-nav">
+          <li className="tooltip">
+            <span className="tooltiptext">Logo</span>
+            <FaPhoenixFramework size={22} />
+          </li>
+          <li className="tooltip">
+            <span className="tooltiptext">Search</span>
+            <FaSearchengin size={22} />
+          </li>
+        </ul>
+        <ul className="app_navigation">
+          <li className="tooltip">
+            <FaArchway size={22} />
+          </li>
+          <li className="tooltip">
+            <span className="tooltiptext">Contact</span>
+            <FaBook size={22} />
+          </li>
+          <li className="tooltip">
+            <FaFolder size={22} />
+          </li>
+          <li className="tooltip">
+            <FaCalendarWeek size={22} />
+          </li>
+          <li className="tooltip">
+            <FaIdBadge size={22} />
+          </li>
+        </ul>
+        <ul className="search-nav">
+          <li className="tooltip">
+            <span className="tooltiptext">Logout</span>
+            <FaGripfire size={22} />
+          </li>
+          <li className="tooltip">
+            <FaMagento size={22} />
+          </li>
+        </ul>
+      </Wrapper>
+      
+    </>
   );
 };
 
-const Wrapper = styled.section` 
-  width: max-content; 
-  height: 100vh; 
+const Wrapper = styled.section`
+  width: max-content;
+  height: 100vh;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   li {
     display: flex;
@@ -89,9 +92,16 @@ const Wrapper = styled.section`
     left: 35px;
     bottom: 1px;
   }
- 
+
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+  .hide {
+    display: none;
+  }
+
+  @media (max-width: 380px) {
+    display: none;
   }
 `;
 
