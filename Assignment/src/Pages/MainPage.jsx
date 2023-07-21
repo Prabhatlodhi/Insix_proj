@@ -1,5 +1,6 @@
 import MidSection from "../components/MidSection";
 import Navbar from "../components/Navbar";
+import RightPortion from "../components/RightPortion";
 import UserDetails from "../components/UserDetails";
 import styled from "styled-components";
 
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Navbar />
       <UserDetails />
       <MidSection/>
+      <RightPortion/>
     </MainWrapper>
   );
 };
