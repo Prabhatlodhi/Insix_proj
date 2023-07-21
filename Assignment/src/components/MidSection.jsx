@@ -71,11 +71,16 @@ const MidSection = () => {
   );
 };
 
-const Wrapper = styled.section` 
-  padding: 10px 40px;
+const Wrapper = styled.section`  
+margin: 0px 40px;
+  padding: 0px 40px;
+  padding-top:10px;
   width: 50%;
   hr {
     margin-top: 10px;
+  }
+  li{
+    font-size:14px;
   }
   h4 {
     color: var(--primary);

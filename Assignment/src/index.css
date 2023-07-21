@@ -20,3 +20,10 @@
   --btnheight:38px;
   --btnborderRadiusBtn:5px;
 }
+
+button { 
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+button:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; /* Add box shadow on hover */
+}

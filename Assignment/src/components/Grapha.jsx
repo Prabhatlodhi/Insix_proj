@@ -63,7 +63,7 @@ export const data = {
 };
 export default function Grapha() {
   return (
-    <div style={{ width: "80%", height: "300px",   margin:"0px auto" }}> 
+    <div style={{ width: "90%", height: "300px",   margin:"0px auto" }}> 
       <Bar options={options} data={data} />
     </div>
   );

@@ -75,13 +75,13 @@ const UserDetails = () => {
   );
 };
 
-const Wrapper = styled.section`
+const Wrapper = styled.section` 
   .image_container {
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:40px;
+    margin-left:35px;
   }
 
   b {
@@ -94,7 +94,7 @@ const Wrapper = styled.section`
   }
   h4 {
     color: var(--grayshades);
-    margin-top: 20px;
+    margin-top: 25px;
   }
   h5 {
     margin-bottom: 20px;
@@ -102,7 +102,6 @@ const Wrapper = styled.section`
   }
 
   .dates {
-    margin-bottom: 30px;
     color: black !important;
   }
 
@@ -123,7 +122,7 @@ const Wrapper = styled.section`
   }
 
   .todays-transactions {
-    margin-left: 80px;
+    margin-left: 75px;
   }
 
   .select-bar {
@@ -135,6 +134,13 @@ const Wrapper = styled.section`
     color:white;
     padding:5px;
   }
+
+  .select-bar { 
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+.select-bar:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; /* Add box shadow on hover */
+}
 `;
 
 export default UserDetails;

@@ -56,7 +56,7 @@ const Navbar = () => {
 };
 
 const Wrapper = styled.section` 
-  width: max-content;
+  width: max-content; 
   height: 100vh; 
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   li {

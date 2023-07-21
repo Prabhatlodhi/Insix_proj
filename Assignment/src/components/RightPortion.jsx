@@ -26,9 +26,9 @@ const RightPortion = () => {
           Interest Rate <span>5 %</span>
         </p>
         <button>Update</button>
-        <h4>View Help Docs &gt; </h4>
+        <h4 className="link">View Help Docs &gt; </h4>
       </div>
-      <div className="bottom-container" >
+      <div className="bottom-container">
         <p>Are you considering a</p>
         <h3>Housing Advance ?</h3>
         <h5>Limited time reduced interest</h5>
@@ -39,11 +39,15 @@ const RightPortion = () => {
 };
 
 const Wrapper = styled.div`
-  padding: 40px;
+  padding: 45px 20px;
+  p {
+      font-size: 14px;
+  }
   .min-wrapper {
-    margin: 50px 0px;
+    margin: 40px 0px;
     p {
-      margin-bottom: 20px;
+      font-size: 14px;
+      margin-bottom: 16px;
     }
     button {
       width: 230px;
@@ -53,6 +57,9 @@ const Wrapper = styled.div`
       border-radius: 5px;
       color: white;
     }
+  }
+  .link {
+    color: var(--primary);
   }
   li {
     margin-top: 25px;
@@ -64,14 +71,14 @@ const Wrapper = styled.div`
   h4 {
     margin: 35px 65px;
   }
-  h5{
-    color:var(--grayshades)
+  h5 {
+    color: var(--grayshades);
   }
-  h6{
-    color:var(--primary)
+  h6 {
+    color: var(--primary);
   }
-  .bottom-container{
-    padding-left:15px;
+  .bottom-container {
+    padding-left: 15px;
     border-left: 1px solid gray;
   }
 `;
