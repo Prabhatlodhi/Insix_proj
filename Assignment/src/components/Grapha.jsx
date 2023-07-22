@@ -1,12 +1,24 @@
 import styled from "styled-components";
 
-const GraphWrapper = styled.div`
-  width: 90%;
-  height: 300px;
-  margin: 0px auto;
+// const GraphWrapper = styled.div`
+// border:1px solid red;
+//   width: 90%;
+//   margin: 0px auto;
+//   @media (max-width: 380px) {
+//     width: 90%;
+//     margin-bottom:30px;
+//   }
+// `;
+const GraphWrapper = styled.div` 
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;  
   @media (max-width: 380px) {
-    width: 350px;
-    height: 300px;
+     
+    width: 100%;
+    height: 200px;
+    padding:0px 15px;
+    margin-bottom: 30px;
   }
 `;
 

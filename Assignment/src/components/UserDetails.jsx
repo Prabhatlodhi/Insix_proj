@@ -82,6 +82,7 @@ const UserDetails = () => {
 };
 
 const Wrapper = styled.section`
+margin-right:0px;
   .image_container {
     margin: 30px;
     display: flex;

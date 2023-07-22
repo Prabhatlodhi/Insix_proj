@@ -73,7 +73,7 @@ const MidSection = () => {
 
 const Wrapper = styled.section`
   margin: 0px 40px;
-  padding: 0px 40px;
+  padding: 0px 75px;
   padding-top: 10px;
   width: 50%;
   hr {
@@ -125,19 +125,24 @@ const Wrapper = styled.section`
     margin-left: 20px;
   }
   @media (max-width: 380px) {
+    margin: 0px 0px;
+  padding: 0px 0px;
+  padding-top: 10px; 
     width: 99%;
     margin: 0px auto;
     .circular-portion-wrapper {
       flex-wrap: wrap;
-      ${"" /* border: 2px solid green; */}
       width: 100%;
+      ul{
+        padding-left:40px; 
+      }
     }
 
     .main {
       width: 350px;
     }
     .sub {
-      width: 100px;
+      width: 140px;
     }
     .wrapper {
       flex-wrap: wrap;
@@ -155,10 +160,9 @@ const Wrapper = styled.section`
       width: 100%; 
       justify-content: center;
     }
-    .bottom-container {
-      width: 100%;
-      margin-top: 0px;
-      margin-left: 0px;
+    .bottom-container { 
+      margin:0px auto;
+      width: 90%; 
     }
   }
 `;
